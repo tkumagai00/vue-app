@@ -4,6 +4,7 @@
   overflow: hidden;
 }
 
+/*
 .v-enter-active, .v-leave-active {
   transition: height 1s;
 }
@@ -23,6 +24,7 @@
 .v-leave-to {
   height: 0px;
 }
+*/
 
 /* フェードイン／アウト */
 /*
@@ -59,7 +61,7 @@
 
 
 /* キーフレーム */
-/*
+
 @keyframes slide-in {
   0% {
     transform: translateX(100%);
@@ -79,4 +81,3 @@
 .v-leave-active {
   animation: slide-in 1.5s reverse;
 }
-*/
