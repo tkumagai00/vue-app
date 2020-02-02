@@ -18,6 +18,7 @@
 
 <script>
 import { mapGetters} from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'app',
@@ -30,14 +31,20 @@ export default {
     }
   },
   methods: {
+    ...mapActions(['addAsync']),
     onclick() {
       // this.$store.commit('addBook', {
       //   book :{
       //     isbn: this.isbn, title: this.title, price: this.price
       //   }
       // })
-      this.$store.dispatch('addAsync', {
-        book :{
+      // this.$store.dispatch('addAsync', {
+      //   book :{
+      //     isbn: this.isbn, title: this.title, price: this.price
+      //   }
+      // })
+      this.addAsync({
+        book: {
           isbn: this.isbn, title: this.title, price: this.price
         }
       })
