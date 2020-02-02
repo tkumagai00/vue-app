@@ -7,13 +7,16 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'app',
-  computed: {
-    count() {
-      return this.$store.state.count
-    }
-  },
+  // computed: {
+  //   count() {
+  //     return this.$store.state.count
+  //   }
+  // },
+
+  computed: mapState(['count']),
   methods: {
     minus() {
       this.$store.commit('minus')
