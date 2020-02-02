@@ -8,6 +8,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import { mapMutations } from 'vuex'
 export default {
   name: 'app',
   // computed: {
@@ -17,14 +18,15 @@ export default {
   // },
 
   computed: mapState(['count']),
-  methods: {
-    minus() {
-      this.$store.commit('minus')
-    },
-    plus() {
-      this.$store.commit('plus')
-    }
-  }
+  // methods: {
+  //   minus() {
+  //     this.$store.commit('minus')
+  //   },
+  //   plus() {
+  //     this.$store.commit('plus')
+  //   }
+  // },
+  methods: mapMutations(['plus', 'minus'])
 }
 </script>
 
