@@ -19,7 +19,8 @@ export default {
   },
   methods: {
     setUpdated() {
-      this.$store.commit('setUpdated')
+      this.$store.commit('main/setUpdated')
+      this.$store.commit('sub/setUpdated')
     }
   }
 }
