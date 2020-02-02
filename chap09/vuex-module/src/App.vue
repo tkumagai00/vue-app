@@ -1,3 +1,4 @@
+<script src="../../../../../vue-app/chap09/vuex-module-map/src/main-store.js"></script>
 <template>
   <div id="app">
     メイン：{{mainUpdated}} <br />
