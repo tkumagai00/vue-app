@@ -50,6 +50,11 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    addAsync(context, payload) {
+      setTimeout(function() {
+        context.commit(ADD_BOOK, payload)
+      }, 5000)
+    }
   },
   modules: {
   }

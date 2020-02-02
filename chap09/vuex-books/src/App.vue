@@ -31,7 +31,12 @@ export default {
   },
   methods: {
     onclick() {
-      this.$store.commit('addBook', {
+      // this.$store.commit('addBook', {
+      //   book :{
+      //     isbn: this.isbn, title: this.title, price: this.price
+      //   }
+      // })
+      this.$store.dispatch('addAsync', {
         book :{
           isbn: this.isbn, title: this.title, price: this.price
         }
