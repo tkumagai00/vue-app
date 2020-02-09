@@ -8,8 +8,6 @@ describe('MyEvent.vue', () => {
         // テキストボックスへの入力＆サブミット
         wrapper.find("#email").setValue(email);
         wrapper.find("form").trigger('submit.prevent');
-
         expect(wrapper.find('#result').text()).toContain('登録完了：' + email)
     })
 });
-
